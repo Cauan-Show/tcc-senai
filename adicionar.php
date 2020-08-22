@@ -35,13 +35,18 @@
         <a href="sairadmin.php"><button>Sair do modo admin</button></a><hr/></br>
         <fieldset>
             <legend>Adicionar Item</legend>
-            <form method='POST' action='novoproduto.php'>
+            <form enctype="multipart/form-data" method='POST' action='novoproduto.php'>
                 <label>Nome:</label>
-                <input name="nome"></br></br>
+                <input name="nome"/></br></br>
                 <label>Quantidade:</label>
-                <input name="quantidade"></br></br>
+                <input name="quantidade"/></br></br>
                 <label>Preço:</label>
-                <input name="preco"></br></br>
+                <input name="preco"/></br></br>
+                <label>Descrição:</label>
+                <input type="textarea" name="descricao"/></br></br>
+                <label>Imagem:</label>
+                <input type="file" name="imagem"/></br></br>
+                <input type="hidden" name="tamanho_maximo" value="99999999"/>
                 <button type="submit">Enviar</button>
             </form>                
         </fieldset>

@@ -49,11 +49,13 @@
                 	R$<?php echo $dado["preco"]; ?></br></br>
 
                 	<label>Confirme seu CPF: </label>
-                	<input placeholder="escreva da mesma forma de quando cadastrou" name="cpf"></br></br> 	
+                	<input placeholder="Ex: XXX.XXX.XXX-XX" name="cpf"/></br></br> 
+                	<label>Telefone para contato: </label>
+                	<input placeholder="Ex: (XX) XXXX-XXXX" name="telefone_pedido"/></br></br>	
                 	<label>Endereço de entrega: </label>
-                	<input name="endereco"></br></br> 	
+                	<input placeholder="Ex: R. Chihiro Bairro Naughisa 999" name="endereco_pedido"/></br></br> 	
                 <button type="submit">Confirmar Compra</button>
-            </form>                
+            </form>
         </fieldset>
         <footer>
             </br>

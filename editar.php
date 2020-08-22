@@ -43,13 +43,18 @@
         <a href="sairadmin.php"><button>Sair do modo admin</button></a><hr/></br>
         <fieldset>
             <legend>Editar item</legend>
-            <?php echo "<form method='POST' autocomplete='on' action='atualiza.php?id=$idv2'>";?>
+            <?php echo "<form enctype='multipart/form-data' method='POST' autocomplete='on' action='atualiza.php?id=$idv2'>";?>
                 <label>Nome (<?php echo $dado["nome"]; ?>):</label>
-                <input name="nome"></br></br>
+                <input name="nome"/></br></br>
                 <label>Quantidade (<?php echo $dado["quantidade"]; ?>):</label>
-                <input name="quantidade"></br></br>
+                <input name="quantidade"/></br></br>
                 <label>Preço (<?php echo $dado["preco"]; ?>):</label>
-                <input name="preco"></br></br>
+                <input name="preco"/></br></br>
+                <label>Descrição (<?php echo $dado["descricao"]; ?>):</label></br>
+                <input type="textarea" name="descricao"/></br></br>
+                Preciso colocar a imagem aqui
+                </br>
+                <input type="file" name="imagem"/></br></br>
                 <button type="submit">Enviar</button>
             </form>                
         </fieldset>
